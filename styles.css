@@ -1,0 +1,1230 @@
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+
+.LightTheme {
+	color-scheme: light;
+}
+
+.Horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.Vertical {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.MainContent {
+	font-family: "Geist", sans-serif;
+	color: #4a5568;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.MainHeader {
+	position: sticky;
+	top: 60px;
+	z-index: 50;
+	display: flex;
+	justify-content: center;
+	transition: top 0.4s ease-in-out;
+}
+
+.HeaderContainer {
+	width: 50%;
+	padding: 0.5rem 1rem;
+	border-radius: 0.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.6);
+	backdrop-filter: blur(8px);
+}
+
+.BrandLogo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.LogoImage {
+	height: 2.5rem;
+	width: auto;
+}
+
+.BrandName {
+	font-weight: 700;
+	font-size: 1.25rem;
+}
+
+.DesktopNav {
+	display: none;
+}
+
+.NavLink {
+	padding: 0.5rem 1rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.NavLink:hover {
+	background-color: #ebf8ff;
+	border-radius: 0.375rem;
+}
+
+.CtaButtons {
+	display: none;
+}
+
+.Btn {
+	padding: 0.5rem 1rem;
+	margin-bottom: 10px;
+	border-radius: 0.375rem;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.BtnSecondary {
+	border: 1px solid #e2e8f0;
+}
+
+.BtnSecondary:hover {
+	background-color: #67ffa1;
+	box-shadow: 0 0 20px #67ffa18b;
+	border-color: transparent;
+}
+
+.BtnPrimary {
+	background-color: #3ca7ff;
+	color: #ffffff;
+	display: inline-flex;
+	align-items: center;
+}
+
+.BtnPrimary:hover {
+	background-color: #379eff;
+	box-shadow: 0 0 20px #0084ff5d;
+}
+
+.BtnRegister {
+	background-color: #414141;
+	color: #ffffff;
+	display: inline-flex;
+	align-items: center;
+}
+
+.BtnRegister:hover {
+	background-color: #9300dd;
+	box-shadow: 0 0 20px #9300dd59;
+}
+
+.IconArrow {
+	height: 1rem;
+	width: 1rem;
+	margin-left: 0.5rem;
+}
+
+.MobileMenuButton {
+	padding: 0.5rem;
+}
+
+.MobileMenuButton:focus {
+	outline: none;
+}
+
+.IconMenu {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.MobileNav {
+	position: absolute;
+	border-radius: 0.75rem;
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 50%;
+	top: 50px;
+	backdrop-filter: blur(8px);
+	padding: 0.5rem 1rem;
+}
+
+.MobileCtaButtons {
+	margin-top: 1rem;
+}
+
+@media (min-width: 1024px) {
+	.DesktopNav {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.CtaButtons {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.MobileMenuButton {
+		display: none;
+	}
+}
+
+.HeroSection {
+	margin: -2rem 2rem 0 2rem;
+	border-radius: 50px;
+	background-image: url("./static/bg.webp");
+	background-size: cover;
+	background-color: rgba(255,255,255,0.4);
+	background-blend-mode: lighten;
+	display: flex;
+	justify-content: center;
+}
+
+.HeroContainer {
+	padding-top: 8rem;
+	max-width: 60vw;
+}
+
+.AnnouncementBanner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	background-color: #ebf8ff;
+	border-radius: 9999px;
+	padding: 0.25rem 0.75rem;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.AnnouncementLabel {
+	background-color: #3ca7ff;
+	color: white;
+	border-radius: 9999px;
+	padding: 0.125rem 0.5rem;
+	font-size: 0.75rem;
+}
+
+.AnnouncementText {
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.HeroHeadline {
+	margin-top: 2rem;
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 1.2;
+}
+
+.HeadlineWord {
+	display: inline-block;
+	padding: 0 0.25rem;
+}
+
+.HeroSubtitle {
+	margin-top: 1rem;
+	text-align: center;
+	font-size: 1.125rem;
+	color: #718096;
+}
+
+#SignUpForm {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.SignUpInput {
+    height: 40px;
+    width: 20vw;
+    border-radius: 10px;
+    border: solid 0px;
+    padding-left: 20px;
+    box-shadow: 0px 1px 45px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+	margin: 10px;
+
+}
+
+.SignUpInput:focus {
+    transform: scale(1.04);
+}
+
+.ReadMoreContainer {
+	display: flex;
+	align-items: center;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+
+.ReadMoreContainer:hover > img {
+    transition: all 0.5s ease-in-out;
+}
+
+.ReadMoreContainer:hover {
+    opacity: 1;
+    color: black;
+    cursor: pointer;
+}
+
+.ReadMoreContainer:hover > img {
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+.ReadMore {
+    font-size: 16px;
+    font-weight: 200;
+    padding-left: 2px;
+    opacity: 0.8;
+}
+
+#ArrowIcon {
+    width: 15px;
+    margin-left: 6px;
+}
+
+.HeroButtons {
+	margin-top: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.BtnLarge {
+	padding: 0.75rem 1.5rem;
+	font-size: 1rem;
+}
+
+.TrialInfo {
+	margin-top: 1rem;
+	font-size: 0.875rem;
+	color: #718096;
+}
+
+.HeroImageWrapper {
+	margin-top: 3rem;
+	margin-bottom: -2rem;
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px
+		rgba(0, 0, 0, 0.05);
+	padding: 3px;
+}
+
+.DashboardImage {
+	width: 100%;
+	height: auto;
+	border-radius: 1.1rem;
+}
+
+.WhiteFade {
+	--mask: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 1) 0,
+			rgba(0, 0, 0, 1) 40%,
+			rgba(0, 0, 0, 0) 95%,
+			rgba(0, 0, 0, 0) 0
+		)
+		100% 50% / 100% 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+	border-radius: 20px;
+}
+
+@property --gradient-angle {
+	syntax: "<angle>";
+	initial-value: 90deg;
+	inherits: false;
+}
+
+:root {
+	--clr-beam: rgba(255, 255, 255, 0);
+	--clr-1: #6520aa83;
+	--clr-2: #3effa285;
+	--clr-3: rgba(255, 255, 255, 0);
+}
+
+.Beam::after,
+.Beam::before {
+	content: " ";
+	position: absolute;
+	z-index: -1;
+	inset: -0.5rem;
+	background: conic-gradient(
+		from var(--gradient-angle),
+		var(--clr-beam),
+		var(--clr-1),
+		var(--clr-2),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-2),
+		var(--clr-1),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-3),
+		var(--clr-beam)
+	);
+
+	border-radius: inherit;
+	animation: rotate 10s linear infinite;
+}
+
+.Beam::after {
+	filter: blur(4rem);
+}
+
+@keyframes rotate {
+	0% {
+		--gradient-angle: 0deg;
+	}
+	100% {
+		--gradient-angle: 360deg;
+	}
+}
+
+.LogoSection {
+	padding: 4rem 1rem;
+}
+
+.LogoSectionTitle {
+	font-size: 0.875rem;
+	font-weight: 600;
+	color: #718096;
+}
+
+/* White Gradient Replacement */
+.white-gradient {
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+/* Animation */
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7)); }
+}
+
+/* Styling */
+.Slider {
+	background: white;
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	max-width: 50vw;
+}
+
+.Slider::before,
+.Slider::after {
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+	content: "";
+	height: 100px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+}
+
+.Slider::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
+}
+
+.Slider::before {
+	left: 0;
+	top: 0;
+}
+
+.slide-track {
+	animation: scroll 40s linear infinite; /* Replacing variable */
+	display: flex;
+	align-items: center;
+	width: calc(250px * 14);
+}
+
+.slide {
+	height: 100px;
+	width: auto;
+	display: flex;
+	align-items: center;
+}
+
+.Market {
+	font-size: 3rem;
+	font-weight: 900;
+	padding-right: 30px;
+	margin: 10px;
+	background: url(./static/bg.webp) center;
+	background-size: 220%;
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.ProblemSection,
+.SolutionSection {
+	padding: 4rem 1rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.SolutionSection {
+	background-color: rgb(246, 246, 246);
+}
+
+.SectionLabel {
+	font-family: monospace;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	color: #3ca7ff;
+}
+
+.SectionTitle {
+	margin-top: 0.5rem;
+	font-size: 3rem;
+	font-weight: 700;
+	max-width: 80vw;
+	text-align: center;
+}
+
+.SectionDescription {
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
+	color: #718096;
+}
+
+.GridContainer {
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ProblemCards,
+.SolutionCards {
+	margin-top: 3rem;
+	flex-wrap: wrap;
+}
+
+.ProblemCards {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+}
+
+.ProblemCard {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	width: 400px;
+	text-align: left;
+}
+
+.ProblemCardImg {
+	width: 3vw;
+	max-width: 30px;
+	filter: invert();
+}
+
+.SolutionCards {
+	display: grid;
+	flex-wrap: wrap;
+	gap: 2rem;
+	width: 60vw;
+	height: 100%;
+	grid-template-rows: repeat(2, 1fr);
+  	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+	  "feature1 feature2 feature3"
+	  "feature4 feature4 feature3";
+}
+
+@media (max-width: 1200px) {
+	#SignUpForm {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.SolutionCards {
+		grid-template-areas:
+			"feature1 feature3"
+			"feature1 feature3"
+			"feature1 feature3"
+			"feature2 feature3"
+			"feature2 feature3"
+			"feature2 feature3"
+			"feature4 feature4"
+			"feature4 feature4"
+			"feature4 feature4";
+		grid-template-rows: repeat(6, 1fr);
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.GridContainer {
+		height: 100vh;
+	}
+
+	.CardImage {
+		width: 30vw;
+	}
+}
+
+@media (max-width: 800px) {
+	html {
+		font-size: 12px;
+	}
+
+	.HeroHeadline {
+		font-size: 2rem;
+	}
+
+	.SectionTitle {
+		font-size: 2rem;
+	}
+
+	.SignUpInput {
+		width: 60vw;
+	}
+
+	.ProblemCard {
+		width: 315px;
+	}
+
+	.SolutionCards {
+		grid-template-areas:
+			"feature1"
+			"feature2"
+			"feature3"
+			"feature3"
+			"feature4";
+		grid-template-rows: repeat(5, 1fr);
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#WidgetMarketImg {
+		margin-top: -20px !important;
+	}
+
+	.GridContainer {
+		height: 150vh;
+	}
+
+	.CardImageShadow {
+		width: 50vw !important;
+	}
+
+	.FaqItem {
+		width: 85vw !important;
+	}
+
+	.FooterLinks {
+		justify-content: center !important;
+		align-items: center !important;
+	}
+
+	.FooterLinkGroup {
+		text-align: center !important;
+		align-items: center !important;
+	}
+}
+
+.Card {
+	width: 100%;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.035);
+	border-radius: 20px;
+	text-align: left;
+	overflow: hidden;
+	--dot-bg: #f7f7f7;
+  	--dot-color: rgba(0, 0, 0, 0.2);
+  	--dot-size: 1px;
+  	--dot-space: 22px;
+	background:
+		linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+		var(--dot-color);
+}
+
+.Card:nth-child(1) {
+	grid-area: feature1;
+}
+
+.Card:nth-child(2) {
+	grid-area: feature2;
+}
+
+.Card:nth-child(3) {
+	grid-area: feature3;
+}
+
+.Card:nth-child(4) {
+	grid-area: feature4;
+}
+
+.CardIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3rem;
+	width: 3rem;
+	border-radius: 9999px;
+	background-color: #ff5353;
+	margin: 10px;
+}
+
+.Icon {
+	height: 1.5rem;
+	width: 1.5rem;
+	color: #3ca7ff;
+}
+
+.CardTitle {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: rgb(255, 140, 0);
+	margin: 1rem;
+}
+
+.CardDescription {
+	font-size: 1rem;
+	color: #565757;
+	margin: 1.5rem;
+}
+
+.CardImageWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.CardImageShadow {
+	box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.045);
+	width: 25vw;
+	border-radius: 10px;
+}
+
+.CardImage {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.CurrenciesImage {
+	margin-left: 50px;
+	margin-top: 80px;
+	border-radius: 18px;
+	filter: brightness(130%);
+	border: 3px solid #ffffff85;
+}
+
+.HowItWorksSection {
+	padding: 4rem 1rem;
+}
+
+.SectionHeader {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.StepsContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.StepsList {
+	flex: 1;
+}
+
+.StepItem {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 1.5rem;
+}
+
+.StepIcon {
+	flex-shrink: 0;
+	background-color: #ebf8ff;
+	border-radius: 9999px;
+	padding: 0.75rem;
+	margin-right: 1rem;
+}
+
+.StepContent {
+	flex: 1;
+}
+
+.StepTitle {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.StepDescription {
+	font-size: 0.875rem;
+	color: #718096;
+}
+
+.StepImageContainer {
+	flex: 1;
+	margin-top: 2rem;
+}
+
+.StepImage {
+	width: 500px;
+	background-color: #e2e8f0;
+	border-radius: 0.5rem;
+}
+
+.how-it-works-section {
+    padding: 60px 20px; /* Adjust padding as needed */
+    max-width: 1200px; /* Max width of the section */
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center the title and subtitle */
+}
+
+.section-subtitle {
+    font-size: 0.9em;
+    color: #58ffc4; /* Reddish color */
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px; /* Add slight letter spacing */
+}
+
+.section-title {
+    font-size: 2.5em; /* Adjust size as needed */
+    color: #1a202c; /* Darker color */
+    font-weight: 700;
+    margin-bottom: 40px; /* Space below title */
+}
+
+/* Content Container (Left Steps + Right Image) */
+.content-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    gap: 40px; /* Space between left and right columns */
+    text-align: left; /* Align step text to the left */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Steps Container (Left Side) */
+.steps-container {
+    flex: 1; /* Take up available space */
+    min-width: 300px; /* Minimum width before wrapping */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between steps */
+}
+
+/* Individual Step Styling */
+.step {
+    display: flex; /* Use flexbox for content + loading bar */
+    gap: 20px; /* Space between step content and loading bar */
+    cursor: pointer; /* Indicate clickable */
+    padding: 15px 0; /* Add some vertical padding for click area */
+    /* border-left: 3px solid transparent; Add a subtle inactive border */
+    transition: border-color 0.3s ease;
+    position: relative; /* Needed for absolute positioning of loading bar */
+    overflow: hidden; /* Hide overflow from loading bar transition */
+}
+
+/* Step Content (Icon + Text) */
+.step-content {
+    display: flex;
+    gap: 20px; /* Space between icon and text */
+    flex-grow: 1; /* Allow content to take up space */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.step-icon {
+    width: 40px; /* Size of the icon circle */
+    height: 40px;
+    border-radius: 50%; /* Make it round */
+    background-color: #f8fffc; /* Light pink background */
+    color: #58ffc4; /* Reddish icon color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* Prevent shrinking */
+    font-size: 1.2em; /* Size of the number/icon inside */
+    font-weight: 600;
+    border: 2px solid #eefffd; /* Add a default border */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.step-text {
+    flex-grow: 1; /* Allow text block to take up space */
+}
+
+.step-title {
+    font-size: 1.2em;
+    color: #1a202c;
+    font-weight: 700;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+.step-description {
+    font-size: 0.95em;
+    color: #555; /* Slightly lighter grey */
+    line-height: 1.5;
+}
+
+/* Loading Bar Styling */
+.loading-bar-container {
+    width: 3px; /* Width of the loading bar */
+    background-color: #e0e0e0; /* Grey color when inactive */
+    position: relative; /* Needed for child positioning */
+    overflow: hidden; /* Hide overflow during transition */
+    flex-shrink: 0; /* Prevent shrinking */
+    height: 100%; /* Make container fill the height of the step */
+    margin: 0 auto; /* Center if step-content wasn't flex-grow */
+    transform: translateX(50%); /* Shift to be visually between content and edge */
+}
+
+.loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Loading bar fills its container width */
+    height: 0%; /* Starts at 0 height */
+    background-color: #58ffc4; /* Reddish color when active */
+    transform-origin: top; /* Animation starts from the top */
+    /* The 'height' and 'transition' properties will be controlled by JavaScript */
+}
+
+/* Active Step Styling */
+.step.active .step-icon {
+    background-color: #58ffc4; /* Darker pink background */
+    color: #fff; /* White icon */
+    border-color: #58ffc4; /* Active border color */
+}
+
+.step.active .loading-bar-container {
+    background-color: #58ffc4; /* Active grey container (optional, depends on exact look) */
+}
+
+.step.active .loading-bar {
+    /* Properties set by JS for animation */
+}
+
+
+/* Image Container (Right Side) */
+.image-container {
+    flex: 1.5; /* Take up more space than the steps */
+    min-width: 350px; /* Minimum width before wrapping */
+    display: flex;
+    justify-content: center; /* Center the image if it doesn't fill container */
+    align-items: center; /* Align image to the top */
+    padding-top: 15px; /* Align top of image roughly with top of first step content */
+}
+
+.dashboard-image {
+    display: block; /* Remove extra space below image */
+    width: 80%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Optional: Add rounded corners */
+	border: 2px solid rgba(255, 255, 255, 0.443);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Optional: Add subtle shadow */
+    /* Initially you might show the image for step 1 */
+    /* If different images were used, you'd manage their display here */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        gap: 30px;
+    }
+
+    .steps-container,
+    .image-container {
+        min-width: unset; /* Remove min-width constraint */
+        width: 100%; /* Allow them to take full width */
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+}
+
+.TestimonialSection {
+	padding: 4rem 1rem;
+	background-color: #f7fafc;
+}
+
+.TestimonialSlider {
+	margin-top: 2rem;
+	display: flex;
+	overflow-x: auto;
+	gap: 1.5rem;
+}
+
+.TestimonialCard {
+	flex: 0 0 auto;
+	width: 18rem;
+	background-color: white;
+	border: 1px solid #e2e8f0;
+	border-radius: 0.5rem;
+	padding: 1.5rem;
+}
+
+.TestimonialText {
+	font-size: 0.875rem;
+	color: #718096;
+	margin-bottom: 1rem;
+}
+
+.TestimonialAuthor {
+	display: flex;
+	align-items: center;
+}
+
+.AuthorLogo {
+	height: 1.5rem;
+	width: 1.5rem;
+	margin-right: 0.75rem;
+}
+
+.AuthorName {
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.AuthorRole {
+	font-size: 0.75rem;
+	color: #a0aec0;
+}
+
+.FeaturesSection {
+	padding: 4rem 1rem;
+}
+
+.FeatureCards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	gap: 2rem;
+	margin-top: 3rem;
+}
+
+.FeatureCard {
+	text-align: center;
+}
+
+.FeatureIcon {
+	background-color: #ebf8ff;
+	border-radius: 9999px;
+	height: 3rem;
+	width: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 1rem;
+}
+
+.FaqSection {
+	padding: 4rem 1rem;
+}
+
+.FaqList {
+	margin-top: 2rem;
+}
+
+.FaqItem {
+	width: 50vw;
+	margin-bottom: 1rem;
+}
+
+.FaqQuestion {
+	width: 100%;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 500;
+	font-size: 1rem;
+	padding: 0 20px 0 20px;
+	border-radius: 10px;
+	border: solid 1px rgb(239, 239, 239);
+	height: 60px;
+	background-color: #ffffff;
+	cursor: pointer;
+}
+
+.FaqIcon {
+	height: 1.25rem;
+	width: 1.25rem;
+	transition: transform 0.3s ease;
+}
+
+.FaqAnswer {
+	margin: 1rem;
+	font-size: 0.875rem;
+	color: #718096;
+}
+
+.CtaSection {
+	padding: 4rem 1rem;
+	background-color: #ebf8ff;
+	text-align: center;
+}
+
+.Footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FooterLinks {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.FooterLinkGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.LinkGroupTitle {
+    font-weight: 600;
+    font-style: normal;
+    color: #404040;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 1.4;
+}
+
+.LinkName {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #404040;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 1.4;
+    opacity: 0.6;
+    transition: all 0.4s ease-in-out;
+}
+
+.LinkName:hover {
+    opacity: 1;
+}
+
+.FooterLogoSection {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+	flex-wrap: wrap;
+    width: 80%;
+}
+
+.LogoText {
+    font-weight: 700;
+    font-size: 20px;
+    color: #404040;
+    margin-left: 5px;
+}
+
+.LogoSubText {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 16px;
+    color: #404040;
+}
+
+.SupportEmail {
+    margin-right: 20px;
+}
+
+.SocialIcon {
+    width: 22px;
+    margin-left: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.SocialIcon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.CopyrightContainer {
+    height: 40px;
+    padding: 20px;
+    width: 80%;
+    border-top: solid 1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TermsContainer {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	flex-wrap: wrap;
+}
+
+.TermsLink {
+	margin-top: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.Copyright {
+    display: inline;
+    font-weight: 200;
+    text-align: right;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+	.StepsContainer {
+		flex-direction: row;
+	}
+
+	.StepImageContainer {
+		margin-top: 0;
+		margin-left: 2rem;
+	}
+}
+
+.Hidden {
+	display: none;
+}
+
+.Rotate {
+	transform: rotate(180deg);
+}

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html class="light" style="color-scheme: light;">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurfolio</title>
+    <link rel="icon" type="image/png" href="./static/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeC32gnAAAAAM8JfCSOq6VdVNvyWO4eTsw_TK9I"></script>
+  </head>
+  <body class="MainContent">
+    <header class="MainHeader">
+        <div class="HeaderContainer">
+            <a href="/" class="BrandLogo">
+                <img src="static/Futurfolio_logo.png" class="LogoImage"/>
+                <span class="BrandName">Futurfolio</span>
+            </a>
+            <nav class="DesktopNav">
+                <a href="#Problems" class="NavLink">Problems</a>
+                <a href="#Solutions" class="NavLink">Solutions</a>
+                <a href="#FAQ" class="NavLink">FAQ</a>
+            </nav>
+            <div class="CtaButtons">
+                <a href="https://app.futurfolio.com" style="margin-bottom: 0;" class="Btn BtnSecondary">Login</a>
+                <a href="https://app.futurfolio.com/register" style="margin-bottom: 0;" class="Btn BtnRegister">
+                    Register
+                </a>
+            </div>
+            <button id="mobile-menu-toggle" class="MobileMenuButton">
+                <svg class="IconMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <nav id="mobile-menu" class="MobileNav Vertical Hidden">
+            <a href="#Problems" class="NavLink">Problems</a>
+            <a href="#Solutions" class="NavLink">Solutions</a>
+            <a href="#FAQ" class="NavLink">FAQ</a>
+            <a href="https://app.futurfolio.com" class="Btn BtnSecondary">Login</a>
+            <a href="https://app.futurfolio.com/register" class="Btn BtnRegister">Register</a>
+        </nav>
+    </header>
+
+    <section class="HeroSection">
+        <div class="HeroContainer">
+            <div class="AnnouncementBanner">
+                <span class="AnnouncementLabel">📣 Announcement</span>
+                <span class="AnnouncementText">Introducing Futurfolio</span>
+            </div>
+            <h1 class="HeroHeadline">
+                <span class="HeadlineWord">Empowering</span>
+                <span class="HeadlineWord">your</span><br>
+                <span class="HeadlineWord">financial</span>
+                <span class="HeadlineWord">future</span>
+            </h1>
+            <p class="HeroSubtitle">
+                Track & analyze all your investments in one place exactly how you like it.
+            </p>
+            <div class="HeroButtons">
+                <form id="SignUpForm">
+                    <input id="SignUpEmail1" class='SignUpInput' type="email" placeholder="name@email.com" required/>
+                    <button class="Btn BtnPrimary BtnLarge g-recaptcha" style="margin-bottom: 0;" type="submit" data-sitekey="6LeC32gnAAAAAM8JfCSOq6VdVNvyWO4eTsw_TK9I" data-callback='submitForm' data-action='submit'>
+                        Join Waitlist
+                    </button>
+                  </form>
+                <a href="./waitlist.html" class="Horizontal ReadMoreContainer">
+                    <p class="ReadMore">Read more about joining the waitlist</p>
+                    <img id="ArrowIcon" src="./static/arrowRight.webp" alt="Arrow Right"/>
+                </a>
+            </div>
+            <div class="HeroImageWrapper WhiteFade Beam">
+                <img src="static/dashboard.png" alt="Dashboard" class="DashboardImage">
+            </div>
+        </div>
+    </section>
+
+    <section class="LogoSection Vertical">
+        <h3 class="LogoSectionTitle">Available markets</h3>
+        <div class="Slider">
+            <div class="slide-track">
+                <div class="slide"><p class="Market">BCBA/XBUE</p></div>
+                <div class="slide"><p class="Market">ASX/XASX</p></div>
+                <div class="slide"><p class="Market">CXA/CXAC</p></div>
+                <div class="slide"><p class="Market">VSE/XWBO</p></div>
+                <div class="slide"><p class="Market">Euronext/XBRU</p></div>
+                <div class="slide"><p class="Market">BSE/XBOT</p></div>
+                <div class="slide"><p class="Market">Bovespa/BVMF</p></div>
+                <div class="slide"><p class="Market">TSXV/XTSX</p></div>
+                <div class="slide"><p class="Market">CSE/XCNQ</p></div>
+                <div class="slide"><p class="Market">TSX/XTSE</p></div>
+                <div class="slide"><p class="Market">NEO/NEOE</p></div>
+                <div class="slide"><p class="Market">BVS/XSGO</p></div>
+                <div class="slide"><p class="Market">SSE/XSHG</p></div>
+                <div class="slide"><p class="Market">SZSE/XSHE</p></div>
+                <div class="slide"><p class="Market">BVC/XBOG</p></div>
+                <div class="slide"><p class="Market">PSE/XPRA</p></div>
+                <div class="slide"><p class="Market">OMXC/XCSE</p></div>
+                <div class="slide"><p class="Market">EGX/XCAI</p></div>
+                <div class="slide"><p class="Market">OMXT/XTAL</p></div>
+                <div class="slide"><p class="Market">OMXH/XHEL</p></div>
+                <div class="slide"><p class="Market">Euronext/XPAR</p></div>
+                <div class="slide"><p class="Market">Munich/XMUN</p></div>
+                <div class="slide"><p class="Market">XHAN/XHAN</p></div>
+                <div class="slide"><p class="Market">XSTU/XSTU</p></div>
+                <div class="slide"><p class="Market">XHAM/XHAM</p></div>
+                <div class="slide"><p class="Market">XDUS/XDUS</p></div>
+                <div class="slide"><p class="Market">XBER/XBER</p></div>
+                <div class="slide"><p class="Market">FSX/XFRA</p></div>
+                <div class="slide"><p class="Market">XETR/XETR</p></div>
+                <div class="slide"><p class="Market">ASE/ASEX</p></div>
+                <div class="slide"><p class="Market">HKEX/XHKG</p></div>
+                <div class="slide"><p class="Market">BSE/XBUD</p></div>
+                <div class="slide"><p class="Market">ICEX/XICE</p></div>
+                <div class="slide"><p class="Market">BSE/XBOM</p></div>
+                <div class="slide"><p class="Market">NSE/XNSE</p></div>
+                <div class="slide"><p class="Market">IDX/XIDX</p></div>
+                <div class="slide"><p class="Market">ISE/XDUB</p></div>
+                <div class="slide"><p class="Market">XMSM/XMSM</p></div>
+                <div class="slide"><p class="Market">XESM/XESM</p></div>
+                <div class="slide"><p class="Market">TASE/XTAE</p></div>
+                <div class="slide"><p class="Market">MTA/XMIL</p></div>
+                <div class="slide"><p class="Market">JSE/XJAM</p></div>
+                <div class="slide"><p class="Market">XSAP/XSAP</p></div>
+                <div class="slide"><p class="Market">JPX/XJPX</p></div>
+                <div class="slide"><p class="Market">XKUW/XKUW</p></div>
+                <div class="slide"><p class="Market">OMXR/XRIS</p></div>
+                <div class="slide"><p class="Market">OMXV/XLIT</p></div>
+                <div class="slide"><p class="Market">MYX/XKLS</p></div>
+                <div class="slide"><p class="Market">BMV/XMEX</p></div>
+                <div class="slide"><p class="Market">Euronext/XAMS</p></div>
+                <div class="slide"><p class="Market">NZX/XNZE</p></div>
+                <div class="slide"><p class="Market">OSE/XOSL</p></div>
+                <div class="slide"><p class="Market">PSX/XKAR</p></div>
+                <div class="slide"><p class="Market">BVL/XLIM</p></div>
+                <div class="slide"><p class="Market">PSE/XPHS</p></div>
+                <div class="slide"><p class="Market">GPW/XWAR</p></div>
+                <div class="slide"><p class="Market">Euronext/XLIS</p></div>
+                <div class="slide"><p class="Market">QE/DSMD</p></div>
+                <div class="slide"><p class="Market">BVB/XBSE</p></div>
+                <div class="slide"><p class="Market">MOEX/MISX</p></div>
+                <div class="slide"><p class="Market">Tadawul/XSAU</p></div>
+                <div class="slide"><p class="Market">SGX/XSES</p></div>
+                <div class="slide"><p class="Market">JSE/XJSE</p></div>
+                <div class="slide"><p class="Market">KONEX/XKON</p></div>
+                <div class="slide"><p class="Market">KRX/XKRX</p></div>
+                <div class="slide"><p class="Market">KOSDAQ/XKOS</p></div>
+                <div class="slide"><p class="Market">BME/XMAD</p></div>
+                <div class="slide"><p class="Market">SSME/SSME</p></div>
+                <div class="slide"><p class="Market">Spotlight Stock Market/XSAT</p></div>
+                <div class="slide"><p class="Market">OMX/XSTO</p></div>
+                <div class="slide"><p class="Market">SIX/XSWX</p></div>
+                <div class="slide"><p class="Market">TWSE/XTAI</p></div>
+                <div class="slide"><p class="Market">TPEX/ROCO</p></div>
+                <div class="slide"><p class="Market">SET/XBKK</p></div>
+                <div class="slide"><p class="Market">BIST/XIST</p></div>
+                <div class="slide"><p class="Market">ADX/XADS</p></div>
+                <div class="slide"><p class="Market">DFM/XDFM</p></div>
+                <div class="slide"><p class="Market">LSE/XLON</p></div>
+                <div class="slide"><p class="Market">LSE/AIMX</p></div>
+                <div class="slide"><p class="Market">OTC/PINX</p></div>
+                <div class="slide"><p class="Market">OTC/EXPM</p></div>
+                <div class="slide"><p class="Market">OTC/PSGM</p></div>
+                <div class="slide"><p class="Market">NYSE/ARCX</p></div>
+                <div class="slide"><p class="Market">NYSE/XASE</p></div>
+                <div class="slide"><p class="Market">NASDAQ/XNCM</p></div>
+                <div class="slide"><p class="Market">NASDAQ/XNAS</p></div>
+                <div class="slide"><p class="Market">NASDAQ/XNGS</p></div>
+                <div class="slide"><p class="Market">OTC/OTCQ</p></div>
+                <div class="slide"><p class="Market">NYSE/XNYS</p></div>
+                <div class="slide"><p class="Market">NASDAQ/XNMS</p></div>
+                <div class="slide"><p class="Market">CBOE/BATS</p></div>
+                <div class="slide"><p class="Market">IEX/IEXG</p></div>
+                <div class="slide"><p class="Market">OTC/OTCM</p></div>
+                <div class="slide"><p class="Market">ICE/NYBOT</p></div>
+                <div class="slide"><p class="Market">OTC/OTCB</p></div>
+                <div class="slide"><p class="Market">BVCC/BVCA</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Problems" class="ProblemSection">
+        <span class="SectionLabel" style="color: #ff5353;">Problems</span>
+        <h2 class="SectionTitle">Excel Is Annoying...<br> But I Need Customizability</h2>
+        <div class="ProblemCards">
+            <div class="ProblemCard">
+                <div class="CardIcon" style="margin-left: 0;">
+                    <img class="ProblemCardImg" src="./static/historical.png"/>
+                </div>
+                <h3 class="CardTitle" style="color: rgb(58, 58, 58); margin-left: 0;">Historical data</h3>
+                <p class="CardDescription" style="margin-left: 0; color: gray;">Struggling to collect historical data to see movements in investment values and provide basis for further analysis is one of the main hussles when it comes to managing your investments with your own tools.</p>
+            </div>
+            <div class="ProblemCard">
+                <div class="CardIcon" style="margin-left: 0;">
+                    <img class="ProblemCardImg" src="./static/error.png"/>
+                </div>
+                <h3 class="CardTitle" style="color: rgb(58, 58, 58); margin-left: 0;">Human errors</h3>
+                <p class="CardDescription" style="margin-left: 0; color: gray;">Forgetting stock splits or making calculation errors can cause panic and wrong analysis results that could lead to bad investment decisions.</p>
+            </div>
+            <div class="ProblemCard">
+                <div class="CardIcon" style="margin-left: 0;">
+                    <img class="ProblemCardImg" src="./static/custom.png"/>
+                </div>
+                <h3 class="CardTitle" style="color: rgb(58, 58, 58); margin-left: 0;">Custom tools</h3>
+                <p class="CardDescription" style="margin-left: 0; color: gray;">Making custom functions is possible in Excel but it takes a lot of time and effort. Missing out on tools that are made by proffesionals makes it difficult to compete with those who have access to these.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Solutions" class="SolutionSection">
+        <span class="SectionLabel">Solution</span>
+        <h2 class="SectionTitle">No Currency Lock-In &<br> Unlimited Customization</h2>
+        <p class="SectionDescription">Our dynamic system allows you to change everything everytime<br> unlike other platforms where account currencies cannot be later changed and dasboards are not customizable.</p>
+        <div class="GridContainer">
+            <div class="SolutionCards">
+                <div class="Card">
+                    <p class="CardTitle">Widget Market</p>
+                    <p class="CardDescription">Choose between many user tailored widgets that are useful specifically for you.</p>
+                    <img id="WidgetMarketImg" class="CardImage WhiteFade" style="margin-top: -35px;" src="./static/widgets.png">
+                </div>
+                <div class="Card">
+                    <p class="CardTitle">Automatic Splits</p>
+                    <p class="CardDescription">Enter your stock investments as they were done and we automatically split them for you to see the today's value.</p>
+                    <div class="CardImageWrapper">
+                        <div class="CardImageShadow" style="width: 80%;">
+                            <img class="CardImage WhiteFade" style="filter: brightness(130%); border: 1px solid rgba(255, 255, 255, 0.135);" src="./static/splits.png">
+                        </div>    
+                    </div>
+                </div>
+                <div class="Card">
+                    <p class="CardTitle">150+ Currencies</p>
+                    <p class="CardDescription">Choose between over 150 currencies for your accounts and select main currency that the total value will be converted into.</p>
+                    <img class="CardImage CurrenciesImage WhiteFade" src="./static/currencies.png">
+                </div>
+                <div class="Card">
+                    <p class="CardTitle">Customize Dashboard</p>
+                    <p class="CardDescription">Drag around, delete, add or duplicate panels how ever you like.</p>
+                    <div id="GifImage" class="CardImageWrapper">
+                        <div class="CardImageShadow">
+                            <img class="CardImage WhiteFade" src="./static/drag.gif">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="Features" class="how-it-works-section">
+    <h4 class="SectionLabel section-subtitle">Continued</h4>
+    <h2 class="SectionTitle">In-Depth Analysis With High Security</h2>
+
+    <div class="content-container">
+        <div class="steps-container">
+
+            <!-- Step 1 -->
+            <div class="step" data-step="1">
+                <div class="step-content">
+                    <div class="step-icon">
+                       <!-- Placeholder for icon -->
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                    </div>
+                     <div class="step-text">
+                         <h3 class="step-title">Account system</h3>
+                         <p class="step-description">The multi-currency accounts feature enables complete investment analysis starting from the deposit step and automatic importing. In the future, we hope to achieve automatic tax filing thanks to this feature.</p>
+                     </div>
+                </div>
+                <div class="loading-bar-container">
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="step" data-step="2">
+                 <div class="step-content">
+                    <div class="step-icon">
+                       <!-- Placeholder for icon -->
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <div class="step-text">
+                        <h3 class="step-title">In-depth analytics</h3>
+                        <p class="step-description">We offer in-depth analytics and market data for each asset class based on our potential clients' preferences.</p>
+                    </div>
+                 </div>
+                <div class="loading-bar-container">
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="step" data-step="3">
+                 <div class="step-content">
+                     <div class="step-icon">
+                       <!-- Placeholder for icon -->
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                     </div>
+                    <div class="step-text">
+                        <h3 class="step-title">High Security</h3>
+                        <p class="step-description">We are using the most modern WebAuthN auth technology that enables fingerprint or facial recognition and eliminates the need to store user passwords in our database. Every device login attempt is saved with geolocation to detect anomalies and help protect our users.</p>
+                    </div>
+                 </div>
+                <div class="loading-bar-container">
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="image-container">
+            <!-- The dashboard image -->
+            <img src="./static/dashboard.png" alt="Dashboard Preview" class="dashboard-image">
+        </div>
+    </div>
+
+  </section>
+  
+  <section id="FAQ" class="FaqSection Vertical">
+      <span class="SectionLabel">FAQ</span>
+      <h2 class="SectionTitle">Frequently asked questions</h2>
+      <div class="FaqList">
+          <div class="FaqItem">
+              <button class="FaqQuestion">
+                  <span>How can I get access?</span>
+                  <svg class="FaqIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+              </button>
+              <div class="FaqAnswer Hidden">
+                  <p>Please sign up using your email and then wait to be whitelisted. When we are ready to onboard more users we will send you an email confirming you eligibility to register on our platform.</p>
+              </div>
+          </div>
+          <div class="FaqItem">
+            <button class="FaqQuestion">
+                <span>What investments do you support currently?</span>
+                <svg class="FaqIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <div class="FaqAnswer Hidden">
+                <p>We currently support only loans and stocks but we are working hard every day to open up new investment types</p>
+            </div>
+          </div>
+          <div class="FaqItem">
+            <button class="FaqQuestion">
+                <span>Can I contribute myself into making new widgets</span>
+                <svg class="FaqIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <div class="FaqAnswer Hidden">
+                <p>YES! Please be welcome to send us an email (support@futurfolio.com) and we will give you what you need to make new widgets for the Widget Market.</p>
+            </div>
+          </div>
+          <div class="FaqItem">
+            <button class="FaqQuestion">
+                <span>How much does it cost?</span>
+                <svg class="FaqIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+            <div class="FaqAnswer Hidden">
+                <p>We are currently in the testing phase and we do not charge our first customers right now.</p>
+            </div>
+          </div>
+      </div>
+  </section>
+  
+  <section id="Whitelist" class="CtaSection Vertical">
+      <span class="SectionLabel">Ready to get started?</span>
+      <h2 class="SectionTitle">Start your free trial today.</h2>
+      <form id="SignUpForm">
+        <input id="SignUpEmail2" class='SignUpInput' type="email" placeholder="name@email.com" required/>
+        <button class="Btn BtnPrimary BtnLarge g-recaptcha" style="margin-bottom: 0;" type="submit" data-sitekey="6LeC32gnAAAAAM8JfCSOq6VdVNvyWO4eTsw_TK9I" data-callback='submitForm' data-action='submit'>
+            Join Waitlist
+        </button>
+      </form>
+  </section>
+  
+  <footer class="Footer">
+    <div class="FooterLinks">
+        <div class="FooterLinkGroup">
+            <p class="LinkGroupTitle">Product</p>
+            <a class="LinkName" href="#Problems">Problems</a>
+            <a class="LinkName" href="#Solutions">Solutions</a>
+            <a class="LinkName" href="#Features">Features</a>
+        </div>
+        <div class="FooterLinkGroup">
+            <p class="LinkGroupTitle">Company</p>
+            <a class="LinkName" href="#FAQ">About</a>
+            <a class="LinkName" href="#FAQ">Contribute</a>
+            <a class="LinkName" href="#FAQ">Careers</a>  
+            <a class="LinkName" href="#FAQ">Contact</a>             
+        </div>
+        <div class="FooterLinkGroup">
+            <p class="LinkGroupTitle">Resources</p>
+            <a class="LinkName" href="https://status.futurfolio.com">System Status</a>
+            <a class="LinkName" href="https://docs.futurfolio.com">Documentation</a> 
+            <a class="LinkName" href="https://app.futurfolio.com">App</a>                
+        </div>
+        <div class="FooterLinkGroup">
+            <p class="LinkGroupTitle">Compare</p>
+            <a class="LinkName" href="https://youexec.com/spreadsheet-templates/portfolio-tracker-in-microsoft-excel-and-google-sheets">Excel</a>
+            <a class="LinkName" href="https://sheets.google.com">Google Sheets</a>
+        </div>
+    </div>
+    <div class="FooterLogoSection">
+        <div>
+            <div class="Horizontal">
+                <img src="./Static/Futurfolio_logo.png" width="30px" alt="Futurfolio logo"/>
+                <h2 class="LogoText">Futurfolio</h2>
+            </div>
+            <p class="LogoSubText">Investments management made customly easy.</p>
+        </div>
+        <div class="Horizontal EmailAndSocial">
+            <p class="SupportEmail">support@futurfolio.com</p>
+            <a href="https://x.com"><img class="SocialIcon" src="./static/XLogo.webp" alt="X(Twitter)"/></a>
+            <a href="https://linkedin.com"><img class="SocialIcon" src="./static/linkedinLogo.webp" alt="LinkedIn"/></a>
+            <a href="https://fb.com"><img class="SocialIcon" src="./static/facebookLogo.webp" alt="Facebook"/></a>
+        </div>
+    </div>
+    <div class="CopyrightContainer">
+        <div class="TermsContainer">
+            <iframe src="https://status.futurfolio.com/badge?theme=light" width="250" height="30" frameborder="0" scrolling="no" style="color-scheme: normal"></iframe>
+            <a class="LinkName TermsLink" href="./terms.html">Terms of Use</a>
+            <a class="LinkName TermsLink" href="./privacy.html">Privacy Policy</a>
+            <a class="LinkName TermsLink" href="./gdpr.html">GDPR</a>
+        </div>
+        <p id="Copyright" class="Copyright">/</p>
+    </div>
+  </footer>
+  <script>
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 50) {
+            header.style.top = "20px"; // Stick to 20px when scrolling
+        } else {
+            header.style.top = "50px"; // Keep at 50px before scrolling
+        }
+    });
+
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('Hidden');
+    });
+  
+    document.querySelectorAll('.FaqQuestion').forEach(button => {
+        button.addEventListener('click', () => {
+            console.error("CLIKED")
+            const answer = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            answer.classList.toggle('Hidden');
+            icon.classList.toggle('Rotate');
+        });
+    });
+
+    async function submitForm (token) {
+        const input1 = document.getElementById("SignUpEmail1");
+        const input2 = document.getElementById("SignUpEmail2");
+        console.erro(input1, input2)
+        if (!input1.reportValidity() && !input2.reportValidity()) return;
+        const email = input1.value || input2.value;
+        console.erro(email)
+        const body = JSON.stringify({
+                email: email,
+                captcha: token
+        });
+
+        try {
+            const response = await fetch("https://api.futurfolio.com/auth/waitlist", {
+                method: 'PUT',
+                headers: {
+                    Accept: 'application/json, text/plain',
+                    'Content-type': 'application/json'
+                },
+                body: body
+            });
+
+            if (!response.ok) {
+                const error = await response.json();
+                console.error(error);
+                document.getElementById("Alert").style.visibility = "visible";
+                document.getElementById("AlertText").textContent = "Error: " + JSON.stringify(error.details);
+            }
+            else window.location.href = '/thankyou.html';
+        } catch (err) {
+            console.log(err);
+            alert(err);
+        };
+    }
+
+    function closeAlert() {
+        document.getElementById("Alert").style.visibility = "hidden";
+    }
+
+    document.getElementById("Copyright").textContent = "© " + new Date().getFullYear() + " Futurfolio. All rights reserved."
+  
+    document.addEventListener('DOMContentLoaded', () => {
+        const steps = document.querySelectorAll('.step');
+        const loadingBars = document.querySelectorAll('.loading-bar');
+        let currentStepIndex = 0;
+        const loadingDuration = 5000; // 5 seconds in milliseconds
+        let autoAdvanceTimer = null;
+        let isLoading = false;
+
+        function activateStep(index) {
+            // Clear any running timer and stop current animation
+            stopAutoAdvance();
+            stopLoadingAnimation();
+            isLoading = false; // Ensure flag is reset
+
+            // Deactivate all steps
+            steps.forEach(step => step.classList.remove('active'));
+            loadingBars.forEach(bar => {
+                bar.style.height = '0%'; // Reset loading bar height
+                bar.style.transition = 'none'; // Remove transition instantly for reset
+            });
+
+            // Activate the selected step
+            steps[index].classList.add('active');
+            currentStepIndex = index;
+
+            // Start the loading animation and timer after a brief delay
+            // This delay ensures the height reset and transition:none take effect before starting the new animation
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => { // Double rAF for robust repaint
+                    startLoadingAnimation(index);
+                    startAutoAdvanceTimer();
+                });
+            });
+
+
+            // You could potentially change the image source or apply filters here
+            const dashboardImage = document.querySelector('.dashboard-image');
+            dashboardImage.src = `./static/dashboard_step_${index + 1}.png`; // Example if you had different images
+        }
+
+        function startLoadingAnimation(index) {
+            isLoading = true;
+            const bar = loadingBars[index];
+            // Force reflow to apply height: 0% instantly before adding transition
+            bar.offsetHeight;
+            bar.style.transition = `height ${loadingDuration}ms linear`;
+            bar.style.height = '100%'; // Start animation
+        }
+
+        function stopLoadingAnimation() {
+            if (!isLoading) return; // Only stop if currently loading
+
+            const bar = loadingBars[currentStepIndex];
+            const currentHeight = bar.offsetHeight; // Get current height in pixels
+            const containerHeight = bar.parentElement.offsetHeight; // Get container height in pixels
+            const currentProgress = (currentHeight / containerHeight) * 100; // Calculate current percentage
+
+            // Set height to current progress instantly, remove transition
+            bar.style.transition = 'none';
+            bar.style.height = `${currentProgress}%`;
+
+            isLoading = false;
+        }
+
+
+        function startAutoAdvanceTimer() {
+            // Ensure any previous timer is cleared
+            stopAutoAdvance();
+
+            autoAdvanceTimer = setTimeout(() => {
+                let nextIndex = (currentStepIndex + 1) % steps.length; // Loop back to first step
+                activateStep(nextIndex);
+            }, loadingDuration);
+        }
+
+        function stopAutoAdvance() {
+            clearTimeout(autoAdvanceTimer);
+            autoAdvanceTimer = null;
+        }
+
+        // Add click listeners to steps
+        steps.forEach((step, index) => {
+            step.addEventListener('click', () => {
+                activateStep(index);
+            });
+        });
+
+        // Initial activation of the first step
+        activateStep(0);
+
+    }); 
+  </script>
+</body>
+</html>
