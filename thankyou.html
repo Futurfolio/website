@@ -1,39 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html class="light" style="color-scheme: light;">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futurfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="ThankYouStyle.css">
-    <link rel="icon" type="image/png" href="./Static/favicon.png"/>
-    <link rel="icon" type="image/png" href="https://futurfolio.com/favicon.png"/>
-    <script src="./script.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-</head>
-<body>
-    <div class="ThanksWindow">
-        <div class="NavBar">
-            <img src="./Static/Futurfolio_logo.png" width="80px" alt="Futurfolio logo">
-            <div class="NavMenu">
-                <a href="/"><p class="NavItem">Home</p></a>
-                <p class="NavItem">About</p>
-                <p class="NavItem">Contact</p>
-                <button class="NavMenuButton SignUpButton">Sign Up</button>
-            </div>    
+    <link rel="icon" type="image/png" href="./static/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeC32gnAAAAAM8JfCSOq6VdVNvyWO4eTsw_TK9I"></script>
+  </head>
+  <body class="MainContent">
+    <header class="MainHeader">
+        <div class="HeaderContainer">
+            <a href="/" class="BrandLogo">
+                <img src="static/Futurfolio_logo.png" class="LogoImage"/>
+                <span class="BrandName">Futurfolio</span>
+            </a>
+            <nav class="DesktopNav">
+                <a href="https://www.futurfolio.com/#Problems" class="NavLink">Problems</a>
+                <a href="https://www.futurfolio.com/#Solutions" class="NavLink">Solutions</a>
+                <a href="https://www.futurfolio.com/#FAQ" class="NavLink">FAQ</a>
+            </nav>
+            <div class="CtaButtons">
+                <a href="https://app.futurfolio.com" style="margin-bottom: 0;" class="Btn BtnSecondary">Login</a>
+                <a href="https://app.futurfolio.com/register" style="margin-bottom: 0;" class="Btn BtnRegister">
+                    Register
+                </a>
+            </div>
+            <button id="mobile-menu-toggle" class="MobileMenuButton">
+                <svg class="IconMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
         </div>
-        <h1 class="LeftSection">Thank You for <br/>Joining Our Waitlist!
-             <p class="LandingSubText">
-                <b>We are thrilled to welcome you to the waitlist for <br/>our upcoming Portfolio Management App!</b> 
-                <br/><br/>
-                Thank you for expressing your interest in our platform.<br/>
-                Your trust and support mean the world to us, <br/> and we can't wait to have you on board.
-            </p>
-        </h1>
-        <div class="Right">
-            <img id="Rocket" src="./Static/ThankYouRocket.png" alt="Rocket">
+        <nav id="mobile-menu" class="MobileNav Vertical Hidden">
+            <a href="https://www.futurfolio.com/#Problems" class="NavLink">Problems</a>
+            <a href="https://www.futurfolio.com/#Solutions" class="NavLink">Solutions</a>
+            <a href="https://www.futurfolio.com/#FAQ" class="NavLink">FAQ</a>
+            <a href="https://app.futurfolio.com" class="Btn BtnSecondary">Login</a>
+            <a href="https://app.futurfolio.com/register" class="Btn BtnRegister">Register</a>
+        </nav>
+    </header>
+
+    <section class="HeroSection">
+        <div class="HeroContainer">
+            <h1 class="HeroHeadline">
+                <span class="HeadlineWord">Thank</span>
+                <span class="HeadlineWord">You</span><br>
+                <span class="HeadlineWord">for</span>
+                <span class="HeadlineWord">joining</span>
+                <span class="HeadlineWord">our</span>
+                <span class="HeadlineWord">waitlist</span>
+            </h1>
+            <p class="HeroSubtitle">We are thrilled to welcome you to the waitlist for our upcoming Portfolio Management App!</p>
+            <p>Thank you for expressing your interest in our platform. Your trust and support mean the world to us, and we can't wait to have you on board.</p>
+            <div class="HeroImageWrapper Horizontal WhiteFade">
+                <img src="static/thankYouRocket.png" alt="Dashboard" class="DashboardImage" style="width: 25vw; margin-bottom: 40px;">
+            </div>
+        </div>
+    </section>
+  
+  <footer class="Footer">
+    <div class="FooterLinks">
+        <div class="FooterLinkGroup">
+            <p class="LinkGroupTitle">Product</p>
+            <a class="LinkName" href="#Problems">Problems</a>
+            <a class="LinkName" href="#Solutions">Solutions</a>
+            <a class="LinkName" href="#Features">Features</a>
+        </div>
+        <div class="FooterLinkGroup">
+            <p class="LinkGroupTitle">Company</p>
+            <a class="LinkName" href="#FAQ">About</a>
+            <a class="LinkName" href="#FAQ">Contribute</a>
+            <a class="LinkName" href="#FAQ">Careers</a>  
+            <a class="LinkName" href="#FAQ">Contact</a>             
+        </div>
+        <div class="FooterLinkGroup">
+            <p class="LinkGroupTitle">Resources</p>
+            <a class="LinkName" href="https://status.futurfolio.com">System Status</a>
+            <a class="LinkName" href="https://docs.futurfolio.com">Documentation</a> 
+            <a class="LinkName" href="https://app.futurfolio.com">App</a>                
+        </div>
+        <div class="FooterLinkGroup">
+            <p class="LinkGroupTitle">Compare</p>
+            <a class="LinkName" href="https://youexec.com/spreadsheet-templates/portfolio-tracker-in-microsoft-excel-and-google-sheets">Excel</a>
+            <a class="LinkName" href="https://sheets.google.com">Google Sheets</a>
         </div>
     </div>
+    <div class="FooterLogoSection">
+        <div>
+            <div class="Horizontal">
+                <img src="./Static/Futurfolio_logo.png" width="30px" alt="Futurfolio logo"/>
+                <h2 class="LogoText">Futurfolio</h2>
+            </div>
+            <p class="LogoSubText">Investments management made customly easy.</p>
+        </div>
+        <div class="Horizontal EmailAndSocial">
+            <p class="SupportEmail">support@futurfolio.com</p>
+            <a href="https://x.com"><img class="SocialIcon" src="./static/XLogo.webp" alt="X(Twitter)"/></a>
+            <a href="https://linkedin.com"><img class="SocialIcon" src="./static/linkedinLogo.webp" alt="LinkedIn"/></a>
+            <a href="https://fb.com"><img class="SocialIcon" src="./static/facebookLogo.webp" alt="Facebook"/></a>
+        </div>
+    </div>
+    <div class="CopyrightContainer">
+        <div class="TermsContainer">
+            <iframe src="https://status.futurfolio.com/badge?theme=light" width="250" height="30" frameborder="0" scrolling="no" style="color-scheme: normal"></iframe>
+            <a class="LinkName TermsLink" href="https://app.futurfolio.com/terms">Terms of Use</a>
+            <a class="LinkName TermsLink" href="https://app.futurfolio.com/policy">Privacy Policy</a>
+        </div>
+        <p id="Copyright" class="Copyright">/</p>
+    </div>
+  </footer>
 </body>
-
 </html>

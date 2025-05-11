@@ -9,6 +9,10 @@ button {
 	cursor: pointer;
 }
 
+.grecaptcha-badge {
+	display: none !important;
+}
+
 .LightTheme {
 	color-scheme: light;
 }
@@ -16,6 +20,7 @@ button {
 .Horizontal {
     display: flex;
     align-items: center;
+	justify-content: center;
 }
 
 .Vertical {
@@ -42,7 +47,7 @@ button {
 }
 
 .HeaderContainer {
-	width: 50%;
+	width: 70%;
 	padding: 0.5rem 1rem;
 	border-radius: 0.75rem;
 	display: flex;
@@ -152,7 +157,7 @@ button {
 	position: absolute;
 	border-radius: 0.75rem;
 	background-color: rgba(255, 255, 255, 0.6);
-	width: 50%;
+	width: 70%;
 	top: 50px;
 	backdrop-filter: blur(8px);
 	padding: 0.5rem 1rem;
@@ -603,6 +608,10 @@ button {
 		font-size: 2rem;
 	}
 
+	.DashboardImage {
+		border-radius: 1.4rem;
+	}
+
 	.SectionTitle {
 		font-size: 2rem;
 	}
@@ -968,6 +977,11 @@ button {
     .section-title {
         font-size: 2em;
     }
+
+	.dashboard-image {
+		max-height: 200px;
+		width: auto;
+	}
 }
 
 .TestimonialSection {
