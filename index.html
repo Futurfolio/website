@@ -458,10 +458,10 @@
     async function submitForm (token) {
         const input1 = document.getElementById("SignUpEmail1");
         const input2 = document.getElementById("SignUpEmail2");
-        console.erro(input1, input2)
+        console.error(input1, input2);
         if (!input1.reportValidity() && !input2.reportValidity()) return;
         const email = input1.value || input2.value;
-        console.erro(email)
+        console.error(email);
         const body = JSON.stringify({
                 email: email,
                 captcha: token
