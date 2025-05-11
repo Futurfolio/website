@@ -62,7 +62,7 @@
             <div class="HeroButtons">
                 <form id="SignUpForm">
                     <input id="SignUpEmail1" class='SignUpInput' type="email" placeholder="name@email.com" required/>
-                    <button class="Btn BtnPrimary BtnLarge g-recaptcha" style="margin-bottom: 0;" type="submit" data-sitekey="6LeC32gnAAAAAM8JfCSOq6VdVNvyWO4eTsw_TK9I" data-callback='submitForm' data-action='submit'>
+                    <button class="Btn BtnPrimary BtnLarge g-recaptcha" style="margin-bottom: 0;" type="submit" data-sitekey="6LeC32gnAAAAAM8JfCSOq6VdVNvyWO4eTsw_TK9I" data-callback='submitForm1' data-action='submit'>
                         Join Waitlist
                     </button>
                   </form>
@@ -362,7 +362,7 @@
       <h2 class="SectionTitle">Join the whitelist today.</h2>
       <form id="SignUpForm">
         <input id="SignUpEmail2" class='SignUpInput' type="email" placeholder="name@email.com" required/>
-        <button class="Btn BtnPrimary BtnLarge g-recaptcha" style="margin-bottom: 0;" type="submit" data-sitekey="6LeC32gnAAAAAM8JfCSOq6VdVNvyWO4eTsw_TK9I" data-callback='submitForm' data-action='submit'>
+        <button class="Btn BtnPrimary BtnLarge g-recaptcha" style="margin-bottom: 0;" type="submit" data-sitekey="6LeC32gnAAAAAM8JfCSOq6VdVNvyWO4eTsw_TK9I" data-callback='submitForm2' data-action='submit'>
             Join Waitlist
         </button>
       </form>
@@ -445,13 +445,19 @@
         });
     });
 
-    async function submitForm (token) {
+    async function submitForm1(token) {
         const input1 = document.getElementById("SignUpEmail1");
+        if (!input1.reportValidity()) return;
+        submitForm(token, input1.value)
+    }
+
+    async function submitForm2(token) {
         const input2 = document.getElementById("SignUpEmail2");
-        console.error(input1, input2);
-        if (!input1.reportValidity() && !input2.reportValidity()) return;
-        const email = input1.value || input2.value;
-        console.error(email);
+        if (!input2.reportValidity()) return;
+        submitForm(token, input2.value)
+    }
+
+    async function submitForm(token, email) {
         const body = JSON.stringify({
                 email: email,
                 captcha: token
